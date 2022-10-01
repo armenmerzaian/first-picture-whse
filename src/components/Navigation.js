@@ -5,24 +5,6 @@ import InfoCard from "./InfoCard";
 export default function Navigation() {
   const [nav, setNav] = useState(true);
 
-  function disableScrolling() {
-    var x = window.scrollX;
-    var y = window.scrollY;
-    window.onscroll = function () {
-      window.scrollTo(x, y);
-    };
-  }
-
-  function enableScrolling() {
-    window.onscroll = function () {};
-  }
-
-  if (!nav) {
-      disableScrolling();
-  } else {
-    enableScrolling();
-  }
-
   function handleNav() {
     setNav(!nav);
   }

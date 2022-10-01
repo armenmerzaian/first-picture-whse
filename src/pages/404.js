@@ -1,6 +1,5 @@
 import * as React from "react";
 import Footer from '../layout/Footer';
-import ScreenSize from '../components/ScreenSize';
 import Navigation from '../components/Navigation'
 
 const NotFoundPage = () => {
@@ -12,8 +11,6 @@ const NotFoundPage = () => {
         <span className="font-regular text-4xl text-tertiary-light/38">Page Not Found</span>
       </div>
       <Footer /> 
-      <ScreenSize />
-      
     </>
   )
 }

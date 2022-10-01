@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from '../layout/Footer';
-import ScreenSize from '../components/ScreenSize';
 import Navigation from '../components/Navigation';
 import HowWeDo from '../layout/HowWeDo';
 import BenefitsCustom from '../layout/BenefitsCustom';
@@ -52,7 +51,6 @@ function services() {
         </div>
       </div>
       <Footer />
-      <ScreenSize />
     </>
   );
 }

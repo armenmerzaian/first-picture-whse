@@ -1,5 +1,4 @@
 import React from "react";
-import ScreenSize from "../components/ScreenSize";
 import Footer from "../layout/Footer";
 import Navigation from "../components/Navigation";
 import OurServices from "../layout/OurServices";
@@ -55,7 +54,6 @@ export default function IndexPage() {
         </div>
       </div>
       <Footer />
-      <ScreenSize />
     </div>
   );
 }

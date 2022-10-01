@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../layout/Footer";
-import ScreenSize from "../components/ScreenSize";
 import Navigation from "../components/Navigation";
 import SectionTitle from "../components/SectionTitle";
 import GalleryCarousel from "../components/GalleryCarousel";
@@ -16,7 +15,6 @@ function gallery() {
         </div>
       </div>
       <Footer />
-      <ScreenSize />
     </div>
   );
 }

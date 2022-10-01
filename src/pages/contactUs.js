@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../layout/Footer";
-import ScreenSize from "../components/ScreenSize";
 import Navigation from "../components/Navigation";
 import InfoCard from "../components/InfoCard";
 import StoreHours from "../components/StoreHours";
@@ -28,7 +27,6 @@ function contactUs() {
         </div>
       </div>
       <Footer />
-      <ScreenSize />
     </>
   );
 }

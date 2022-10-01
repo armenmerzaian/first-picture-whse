@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from '../layout/Footer';
-import ScreenSize from '../components/ScreenSize';
 import Navigation from '../components/Navigation';
 import OurPurpose from '../layout/OurPurpose';
 import OurValues from '../layout/OurValues';
@@ -53,7 +52,6 @@ function aboutUs() {
         </div>
       </div>
       <Footer />
-      <ScreenSize />
     </>
   );
 }
