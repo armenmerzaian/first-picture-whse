@@ -1,0 +1,14 @@
+.swiper-pagination{
+    scale: 150%;
+}
+
+.swiper-pagination-bullet{
+    filter: invert(50%);
+}
+.swiper-pagination-bullet-active {
+    background-color: #fff41a;
+    filter: none;
+}
+
+
+
