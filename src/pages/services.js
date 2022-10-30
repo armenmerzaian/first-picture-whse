@@ -31,7 +31,7 @@ function services() {
       <div className="pt-[100px] laptop:pt-[196px] pb-[162px] bg-secondary-dark text-tertiary-light px-4">
         <Hero
           subtitle="We are ready for any custom framing challenge. With our knowledge and expertise, we strive to make your framing dreams come true!"
-          img="../images/hero-image.png"
+          img="images/hero-image.png"
           jumpLink="/services#services-offered"
           dblBtn={false}
         >
