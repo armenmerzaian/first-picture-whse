@@ -31,7 +31,7 @@ export default function IndexPage() {
       <div className="pt-[100px] laptop:pt-[196px] pb-36 px-4 tablet:px-6">
         <Hero
           subtitle="We are ready for any custom framing challenge. With our knowledge and expertise, we strive to make your framing dreams come true!"
-          img="../images/hero-image.png"
+          img="images/hero-image.png"
           jumpLink="/#our-services"
           mobileSubtitle={false}
         >
