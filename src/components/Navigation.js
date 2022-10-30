@@ -13,7 +13,7 @@ export default function Navigation() {
       <div className="flex justify-between w-full mx-auto max-w-[1200px] px-4 laptop:px-0">
         <a href="/" className="shrink-0 h-fit my-auto">
           <img
-            src="../images/navbar-brand.svg"
+            src="images/navbar-brand.svg"
             alt="logo"
             className="h-[48px] laptop:h-[64px]"
           />
