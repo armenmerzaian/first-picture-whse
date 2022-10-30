@@ -12,11 +12,11 @@ import "../styles/GalleryCarousel.css"
 import { EffectCards, Navigation, Pagination, navigationNext, navigationPrev } from "swiper";
 
 const gallery = [
-  "../images/in-the-making-studio-0UKym2nB78I-unsplash.jpg",
-  "../images/intenza-fitness-fkS8l7CSGY4-unsplash.jpg",
-  "../images/marek-okon-RdTCTv_iCbE-unsplash.jpg",
-  "../images/rumman-amin-5zoLQUZaWgA-unsplash.jpg",
-  "../images/taru-goyal-lZVBjYeeEu0-unsplash.jpg",
+  "images/in-the-making-studio-0UKym2nB78I-unsplash.jpg",
+  "images/intenza-fitness-fkS8l7CSGY4-unsplash.jpg",
+  "images/marek-okon-RdTCTv_iCbE-unsplash.jpg",
+  "images/rumman-amin-5zoLQUZaWgA-unsplash.jpg",
+  "images/taru-goyal-lZVBjYeeEu0-unsplash.jpg",
 ];
 
 const swiperStyle = {
