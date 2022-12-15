@@ -6,8 +6,8 @@ import StoreHours from "../components/StoreHours";
 export default function Footer() {
   return (
     <div className="bottom-0 left-0 right-0 bg-surface-1 ">
-      <div className="flex flex-col laptop:flex-row justify-between p-8 laptop:p-12 gap-12 laptop:gap-8 text-tertiary-light max-w-[1200px] mx-auto">
-        <div className="tablet:inline-flex w-full justify-between max-w-[945px] h-fit">
+      <div className="flex flex-col laptop:flex-row justify-between p-8 laptop:p-12 gap-12 laptop:gap-8 text-tertiary-light max-w-[1200px] laptop:max-w-[1300px] mx-auto">
+        <div className="tablet:inline-flex w-full justify-between max-w-[945px] h-fit outline-dotted">
           <ul id="_Home" className="mb-12">
             <FooterItem link="/" label="Home" />
             <FooterItem
@@ -87,10 +87,10 @@ export default function Footer() {
         </div>
 
         <div className="border-b border-neutral-20 rounded-b-full desktop:hidden"></div>
-        <div className="tablet:flex tablet:justify-around">
-              <InfoCard footer={true} />
+        <div className="tablet:flex tablet:justify-between gap-4">
+          <InfoCard />
           <div className="hidden tablet:block laptop:hidden">
-          <StoreHours />
+            <StoreHours />
           </div>
         </div>
       </div>

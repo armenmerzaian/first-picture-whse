@@ -13,7 +13,7 @@ function contactUs() {
       <div className="pt-[171px] pb-[162px] bg-secondary-dark px-4">
         <SectionTitle text="Contact Us" />
         <div className="flex gap-6 flex-col laptop:flex-row laptop:gap-8 laptop:bg-surface-1 laptop:p-8 max-w-fit rounded-2xl mx-auto mt-16">
-          <div className="flex flex-col gap-6 laptop:gap-8 laptopL:justify-between">
+          <div className="flex flex-col gap-6 laptop:gap-8 laptop:justify-between">
             <div className="">
               <InfoCard />
             </div>
