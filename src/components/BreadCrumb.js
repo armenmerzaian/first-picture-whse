@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby";
 
 export default function BreadCrumb({crumbs}) {
 
@@ -8,13 +9,13 @@ export default function BreadCrumb({crumbs}) {
         {crumbs.map((crumb, key) => {
           return (
             <>
-              <a
+              <Link
                 className="py-2 px-4 hover:text-primary-85 hover:bg-neutral-20 rounded-[100px]"
-                href={crumb.link}
+                to={crumb.link}
                 key={key}
               >
                 {crumb.title}
-              </a>
+              </Link>
               <span className="text-neutral-20 last-of-type:hidden">|</span>
             </>
           );

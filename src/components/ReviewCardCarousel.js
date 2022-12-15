@@ -7,32 +7,32 @@ export default function ReviewCardCarousel() {
   const reviews = [
     {
       name: "Emily",
-      img: "../images/profile.png",
+      img: "images/profile.png",
       text: "Had a poster framed and it's absolutely stunning, the colour and attention to detail. This was an old document that I hadn't taken care of and Gregory turned it into a beautiful piece.",
     },
     {
       name: "Duane M",
-      img: "../images/profile.png",
+      img: "images/profile.png",
       text: "I have had almost every single one of the pictures in my house framed by Aris and some have been dry mounted. If it can be done and done right, this is the place to have it done. Nothing is too difficult, nothing is impossible.",
     },
     {
       name: "[NAME]",
-      img: "../images/profile.png",
+      img: "images/profile.png",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       name: "[NAME2]",
-      img: "../images/profile.png",
+      img: "images/profile.png",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       name: "[NAME3]",
-      img: "../images/profile.png",
+      img: "images/profile.png",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       name: "[NAME4]",
-      img: "../images/profile.png",
+      img: "images/profile.png",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
   ];

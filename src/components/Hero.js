@@ -33,7 +33,7 @@ export default function Hero({subtitle, img, jumpLink, dblBtn, children, mobileS
           </div>
         </div>
       </div>
-      <div className="w-fit mx-auto mt-10 px-[6px] pt-[2px] rounded-full laptop:outline outline-primary-55 animate-bounce">
+      <div className="w-fit mx-auto mt-10 px-[6px] pt-[2px] !rounded-full laptop:border border-primary-55 animate-bounce">
         <Link to={jumpLink}>
           <span className="material-icons text-5xl text-primary-55">
             expand_more

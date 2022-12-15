@@ -1,9 +1,11 @@
 import React from "react";
+import '../styles/webkit-styles.css';
+
 
 export default function Accordion({ question, answer }) {
   return (
     <details className="group">
-      <summary className="flex items-center justify-between px-4 tablet:px-6 laptop:px-8 rounded-2xl group-open:rounded-b-none cursor-pointer bg-surface-1 min-h-[96px] desktop:h-32">
+      <summary className="flex items-center justify-between px-4 tablet:px-6 laptop:px-8 rounded-2xl group-open:rounded-b-none cursor-pointer bg-surface-1 min-h-[96px] desktop:h-32 change-webkit">
         <h5 className="font-semibold text-tertiary-light text-base tablet:text-xl desktop:text-2xl">
           {question}
         </h5>
