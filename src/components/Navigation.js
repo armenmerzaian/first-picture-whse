@@ -11,13 +11,13 @@ export default function Navigation() {
   return (
     <div className="text-tertiary-light/87 py-4 desktop:px-[120px] items-center fixed z-10 top-0 left-0 right-0 bg-secondary-dark border-b-2 border-neutral-20">
       <div className="flex justify-between w-full mx-auto max-w-[1200px] px-4 laptop:px-0">
-        <a href="/" className="shrink-0 h-fit my-auto">
+        <Link to="/" className="shrink-0 h-fit my-auto">
           <img
             src="images/navbar-brand.svg"
             alt="logo"
             className="h-[48px] laptop:h-[64px]"
           />
-        </a>
+        </Link>
         <ul className="laptop:flex laptop:gap-14 text-lg font-semibold hidden items-center ">
           <li className="p-2">
             <Link
@@ -119,9 +119,6 @@ export default function Navigation() {
               </Link>
             </li>
           </ul>
-          <div className="fixed bottom-8 w-full pl-8">
-            <InfoCard />
-          </div>
         </div>
       </div>
     </div>
