@@ -1,15 +1,10 @@
 import React from 'react'
 
-export default function InfoCard({size, footer}) {
+export default function InfoCard() {
   return (
     <>
       <div
-        className={
-          footer === true
-            ? "p-4 rounded-2xl bg-surface-6 shadow-sm w-full h-fit"
-            : "p-4 rounded-2xl bg-surface-6 shadow-sm max-w-[343px] laptop:max-w-[483px] h-fit"
-        }
-      >
+        className="p-4 rounded-2xl bg-surface-6 shadow-sm max-w-[343px] laptop:max-w-[483px] h-fit">
         <div className="text-lg font-semibold min-w-fit">
           <ul>
             <li className="flex gap-8 pb-4 ml-[5px]">
@@ -20,13 +15,10 @@ export default function InfoCard({size, footer}) {
                 </span>
               </div>
               <div
-                className={
-                  footer === true
-                    ? "text-base laptop:text-sm text-tertiary-light/87 font-light max-w-fit py-3.5 ml-[-4px]"
-                    : "text-sm laptop:text-lg text-tertiary-light/87 font-light max-w-fit py-3.5 ml-[-4px]"
-                }
-              >
-                <a href="tel:416-781-9141" className="hover:underline">416-781-9141</a>
+                className="text-sm laptop:text-lg text-tertiary-light/87 font-light max-w-fit py-3.5 ml-[-4px]">
+                <a href="tel:416-781-9141" className="hover:underline">
+                  416-781-9141
+                </a>
               </div>
             </li>
             <li className="flex gap-8 pb-4 ml-[7px]">
@@ -37,13 +29,11 @@ export default function InfoCard({size, footer}) {
                 </span>
               </div>
               <div
-                className={
-                  footer === true
-                    ? "text-base laptop:text-sm text-tertiary-light/87 font-light max-w-fit mr-4 py-3.5 tracking-wider"
-                    : "text-sm laptop:text-lg text-tertiary-light/87 font-light max-w-fit mr-4 py-3.5 tracking-wider"
-                }
-              >
-                <a href="mailto:info@firstpictureframewhse.com?subject=I'm looking for a high quality framing job." className="hover:underline">
+                className="text-sm laptop:text-lg text-tertiary-light/87 font-light max-w-fit mr-4 py-3.5 tracking-wider">
+                <a
+                  href="mailto:info@firstpictureframewhse.com?subject=I'm looking for a high quality framing job."
+                  className="hover:underline"
+                >
                   info@firstpictureframewhse.com
                 </a>
               </div>
@@ -56,12 +46,7 @@ export default function InfoCard({size, footer}) {
                 </span>
               </div>
               <div
-                className={
-                  footer === true
-                    ? "text-base laptop:text-sm text-tertiary-light/87 font-light max-w-fit ml-[-8px]"
-                    : "text-sm laptop:text-lg text-tertiary-light/87 font-light max-w-fit ml-[-8px]"
-                }
-              >
+                className="text-sm laptop:text-lg text-tertiary-light/87 font-light max-w-fit ml-[-8px]">
                 <a
                   href="https://goo.gl/maps/W9FHfuPNrmRY4Leh6"
                   target="_blank"

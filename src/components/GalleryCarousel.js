@@ -50,7 +50,7 @@ export default function GalleryCarousel() {
             key={key}
             className="rounded-[24px] laptop:rounded-[40px]"
           >
-            <img src={url} className="swiper-lazy" />
+            <img src={url} className="swiper-lazy w-full block" />
             <div class="swiper-lazy-preloader"></div>
           </SwiperSlide>
         );
