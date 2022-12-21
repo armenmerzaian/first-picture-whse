@@ -1,0 +1,10 @@
+input:not(:focus):not(:placeholder-shown):invalid ~ label {
+    --tw-text-opacity: 1;
+    color: rgb(232 130 125 / var(--tw-text-opacity));
+}
+
+textarea:not(:focus):not(:placeholder-shown):invalid~label {
+    --tw-text-opacity: 1;
+    color: rgb(232 130 125 / var(--tw-text-opacity));
+}
+

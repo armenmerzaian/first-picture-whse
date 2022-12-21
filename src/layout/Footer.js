@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="bottom-0 left-0 right-0 bg-surface-1 ">
       <div className="flex flex-col laptop:flex-row justify-between p-8 laptop:p-12 gap-12 laptop:gap-8 text-tertiary-light max-w-[1200px] laptop:max-w-[1300px] mx-auto">
-        <div className="tablet:inline-flex w-full justify-between max-w-[945px] h-fit outline-dotted">
+        <div className="tablet:inline-flex w-full justify-between max-w-[945px] h-fit">
           <ul id="_Home" className="mb-12">
             <FooterItem link="/" label="Home" />
             <FooterItem

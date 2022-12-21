@@ -1,109 +1,128 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import Modal from "../components/Modal";
+import "../styles/form-errors.css";
 
 export default function ContactForm() {
   const [modalShow, setModalShow] = useState(false);
+  const [errorModalShow, setErrorModalShow] = useState(false);
+  
 
   function handleClick(e) {
-    /* e.preventDefault(); */
+
+    let data = new FormData(e.target);
+    let action = "https://www.formbackend.com/f/08da67ac6f24201c";
+    let request = new XMLHttpRequest();
+    request.open("POST", action, true);
+    request.onerror = function() {
+      //request failed
+      setErrorModalShow(true);
+    }
+    request.send(data);
     setModalShow(true);
+    e.preventDefault();
+    document.getElementById("contact-form").reset(); 
   }
 
   // action="https://formspree.io/f/xzbwpnlz"
+  // method="POST"
   return (
     <div className="p-4 laptop:p-8 rounded-2xl bg-surface-6 shadow-md">
       <h1 className="text-primary-55 text-lg laptop:text-2xl font-semibold mb-6">
         Send Us A Message
       </h1>
       <form
-        accept-charset="UTF-8"
-        action="https://www.formbackend.com/f/08da67ac6f24201c"
-        method="POST"
+        acceptCharset="UTF-8"
         className="grid grid-cols-1 laptop:grid-cols-2 gap-8"
+        onSubmit={handleClick}
+        id="contact-form"
       >
-        <div>
-          <label
-            htmlFor="first_name"
-            className="text-sm leading-6 text-tertiary-light text-semantic-error"
-          >
-            First Name
-          </label>
-          <br />
+        <div className="flex flex-col">
           <input
             type="text"
             name="first_name"
             id="first_name"
             placeholder="Enter your first name"
-            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7 caret-semantic-error"
+            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7 order-3"
             required
+            minLength={2}
           />
-        </div>
-        <div>
           <label
-            htmlFor="last"
-            className="text-sm leading-6 text-tertiary-light"
+            htmlFor="first_name"
+            className="text-sm leading-6 text-tertiary-light order-1"
           >
-            Last Name
+            First Name
           </label>
-          <br />
+          <br className="order-2" />
+        </div>
+        <div className="flex flex-col">
           <input
             type="text"
             name="last_name"
             id="last_name"
             placeholder="Enter your last name"
-            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7"
+            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7 order-3"
             required
+            minLength={2}
           />
-        </div>
-        <div>
           <label
-            htmlFor="emailInput"
-            className="text-sm leading-6 text-tertiary-light"
+            htmlFor="last"
+            className="text-sm leading-6 text-tertiary-light order-1"
           >
-            Email
+            Last Name
           </label>
-          <br />
+          <br className="order-2" />
+        </div>
+        <div className="flex flex-col">
           <input
             type="text"
             name="email"
             id="emailInput"
             placeholder="Enter your email"
-            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light  h-7"
+            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7 order-3"
             required
+            pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
           />
-        </div>
-        <div>
           <label
-            htmlFor="tel_number"
-            className="text-sm leading-6 text-tertiary-light"
+            htmlFor="emailInput"
+            className="text-sm leading-6 text-tertiary-light order-1"
           >
-            Phone
+            Email
           </label>
-          <br />
+          <br className="order-2" />
+        </div>
+        <div className="flex flex-col">
           <input
             type="tel"
             name="tel_number"
             id="tel_number"
             placeholder="Enter your phone number"
-            className="bg-transparent border-x-0 border-t-0 border-b appearance-none pl-0 text-sm text-tertiary-light  h-7"
+            className="bg-transparent border-x-0 border-t-0 border-b appearance-none pl-0 text-sm text-tertiary-light h-7 order-3"
             required
+            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
           />
+          <label
+            htmlFor="tel_number"
+            className="text-sm leading-6 text-tertiary-light order-1"
+          >
+            Phone
+          </label>
+          <br className="order-2" />
         </div>
-        <label className="laptop:col-span-full text-sm leading-6 text-tertiary-light">
-          Message
+        <div className="flex flex-col col-span-2">
           <textarea
             type="text"
             name="message"
-            className="w-full bg-transparent rounded-lg mt-1 text-sm resize-none h-[179px]"
+            className="w-full bg-transparent rounded-lg mt-1 text-sm resize-none h-[179px] order-2 text-tertiary-light"
             placeholder="Send us a message..."
             required
+            maxLength={300}
+            minLength={20}
           />
-        </label>
-        <button
-          onClick={(e) => handleClick(e)}
-          type="submit"
-          className="w-fit ml-auto font-semibold rounded-[100px] px-4 py-2 bg-primary-55 hover:bg-primary-65 active:bg-primary-75 laptop:col-span-full max-h-12"
-        >
+          <label className="laptop:col-span-full text-sm leading-6 text-tertiary-light order-1">
+            Message
+          </label>
+        </div>
+        <button className="w-fit ml-auto font-semibold rounded-[100px] px-4 py-2 bg-primary-55 hover:bg-primary-65 active:bg-primary-75 laptop:col-span-full max-h-12">
           Send Message
         </button>
       </form>
@@ -117,6 +136,47 @@ export default function ContactForm() {
       ) : (
         ""
       )}
+      {errorModalShow ? (
+        <ErrorModal
+          errorModalShow={errorModalShow}
+          setErrorModalShow={setErrorModalShow}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 }
+
+function ErrorModal({ errorModalShow, setErrorModalShow}) {
+  function toggleModal() {
+    setErrorModalShow(!errorModalShow);
+  }
+  return (
+    <div className="fixed z-40 inset-0 bg-black/60 backdrop-blur-2xl flex justify-center items-center">
+      <div className="bg-surface-1 rounded-2xl w-[343px] h-[332px] grow-0 shrink-0 flex flex-col justify-start items-center">
+        <button onClick={toggleModal} className="self-end pt-[20px] pr-[20px]">
+          <span className="material-icons-outlined text-tertiary-light/87">
+            close
+          </span>
+        </button>
+        <span className="material-icons-outlined text-primary-55 text-7xl mx-auto mb-6">
+          error
+        </span>
+        <h3 className="text-primary-55 text-xl leading-8 font-bold text-center mb-2">
+          Oops!
+        </h3>
+        <p className="text-center text-tertiary-light/87 text-sm laptop:text-base px-[12px] leading-loose mb-5">
+          Your form could not be submitted. <span className="block">Try again later.</span>
+        </p>
+        <button
+          onClick={toggleModal}
+          className="rounded-[100px] px-4 py-2 bg-primary-55"
+        >
+          Done
+        </button>
+      </div>
+    </div>
+  );
+}
+
