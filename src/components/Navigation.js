@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from 'gatsby';
-import InfoCard from "./InfoCard";
 
 export default function Navigation() {
   const [nav, setNav] = useState(true);
@@ -65,7 +64,7 @@ export default function Navigation() {
           </li>
         </ul>
         <div className="cursor-pointer laptop:hidden" onClick={handleNav}>
-          <span className="material-icons-round text-primary-55 text-4xl">
+          <span className="material-icons text-primary-55 text-4xl">
             {!nav ? "close" : "menu"}
           </span>
         </div>

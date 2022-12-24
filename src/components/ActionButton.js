@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 
 export default function ActionButton({
   type,
-  platform,
   label,
   trailingIcon,
   to,
@@ -20,7 +19,7 @@ export default function ActionButton({
       <>
         <div className="text-lg flex items-center font-semibold">{label}</div>
         {trailingIcon === true ? (
-          <span className="material-icons-outlined flex items-center">arrow_right_alt</span>
+          <span className="material-icons flex items-center">arrow_right_alt</span>
         ) : (
           ""
         )}
