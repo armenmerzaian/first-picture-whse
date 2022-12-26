@@ -1,3 +1,9 @@
 summary::-webkit-details-marker {
     display: none;
 }
+
+.webkit-padding{
+    /* -webkit-padding-end: 0px; */
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+}

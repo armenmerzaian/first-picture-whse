@@ -6,6 +6,7 @@ module.exports = {
     screens: {
       // mobile => 0-767px
       tablet: "768px",
+      sketch: "842px",
       laptop: "1280px",
       desktop: "1440px",
     },

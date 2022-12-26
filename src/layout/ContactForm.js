@@ -1,6 +1,7 @@
 import React, {useState, useRef} from 'react'
 import Modal from "../components/Modal";
 import "../styles/form-errors.css";
+import "../styles/webkit-styles.css"
 
 export default function ContactForm() {
   const [modalShow, setModalShow] = useState(false);
@@ -26,13 +27,13 @@ export default function ContactForm() {
   // action="https://formspree.io/f/xzbwpnlz"
   // method="POST"
   return (
-    <div className="p-4 laptop:p-8 rounded-2xl bg-surface-6 shadow-md">
-      <h1 className="text-primary-55 text-lg laptop:text-2xl font-semibold mb-6">
+    <div className="p-4 tablet:p-8 rounded-2xl bg-surface-6 shadow-sm laptop:pb-9">
+      <h1 className="text-primary-55 text-lg laptop:text-2xl font-semibold mb-6 webkit-padding">
         Send Us A Message
       </h1>
       <form
         acceptCharset="UTF-8"
-        className="grid grid-cols-1 laptop:grid-cols-2 gap-8"
+        className="tablet:grid space-y-[36px] tablet:space-y-0 grid-cols-1 tablet:grid-cols-2 gap-8"
         onSubmit={handleClick}
         id="contact-form"
       >
@@ -42,7 +43,7 @@ export default function ContactForm() {
             name="first_name"
             id="first_name"
             placeholder="Enter your first name"
-            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7 order-3"
+            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7 order-3 justify-start"
             required
             minLength={2}
           />
@@ -52,7 +53,6 @@ export default function ContactForm() {
           >
             First Name
           </label>
-          <br className="order-2" />
         </div>
         <div className="flex flex-col">
           <input
@@ -70,7 +70,6 @@ export default function ContactForm() {
           >
             Last Name
           </label>
-          <br className="order-2" />
         </div>
         <div className="flex flex-col">
           <input
@@ -88,7 +87,6 @@ export default function ContactForm() {
           >
             Email
           </label>
-          <br className="order-2" />
         </div>
         <div className="flex flex-col">
           <input
@@ -106,7 +104,6 @@ export default function ContactForm() {
           >
             Phone
           </label>
-          <br className="order-2" />
         </div>
         <div className="flex flex-col col-span-2">
           <textarea
@@ -122,7 +119,7 @@ export default function ContactForm() {
             Message
           </label>
         </div>
-        <button className="w-fit ml-auto font-semibold rounded-[100px] px-4 py-2 bg-primary-55 hover:bg-primary-65 active:bg-primary-75 laptop:col-span-full max-h-12">
+        <button className="w-fit ml-auto font-semibold rounded-[100px] px-4 py-2 bg-primary-55 hover:bg-primary-65 active:bg-primary-75 tablet:col-span-full max-h-12">
           Send Message
         </button>
       </form>

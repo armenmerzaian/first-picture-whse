@@ -10,16 +10,12 @@ function contactUs() {
   return (
     <>
       <Navigation />
-      <div className="pt-[171px] pb-[162px] bg-secondary-dark px-4">
+      <div className="pt-[171px] pb-[162px] bg-secondary-dark px-4 tablet:px-12">
         <SectionTitle text="Contact Us" />
-        <div className="flex gap-6 flex-col laptop:flex-row laptop:gap-8 laptop:bg-surface-1 laptop:p-8 max-w-fit rounded-2xl mx-auto mt-16">
-          <div className="flex flex-col gap-6 laptop:gap-8 laptop:justify-between">
-            <div className="">
-              <InfoCard />
-            </div>
-            <div className="">
-              <StoreHours />
-            </div>
+        <div className="flex gap-6 flex-col laptop:flex-row laptop:gap-8 tablet:bg-surface-1 tablet:p-6 w-auto max-w-[768px] laptop:w-fit laptop:max-w-none rounded-2xl mx-auto mt-16">
+          <div className="flex flex-col sketch:flex-row laptop:flex-col gap-6 laptop:gap-8 tablet:justify-between flex-shrink">
+            <InfoCard />
+            <StoreHours />
           </div>
           <div className="">
             <ContactForm />
