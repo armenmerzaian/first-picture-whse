@@ -6,7 +6,7 @@ import {Link} from "gatsby";
 const NotFoundPage = () => {
   return (
     <>
-      <div className="pt-[188px] bg-secondary-dark h-full flex flex-col gap-4 justify-center items-center py-28">
+      <div className="pt-[188px] bg-secondary-dark h-screen flex flex-col gap-4 justify-center items-center py-28">
         <Link to="/" className="shrink-0 h-fit my-auto">
           <img
             src="images/navbar-brand.svg"

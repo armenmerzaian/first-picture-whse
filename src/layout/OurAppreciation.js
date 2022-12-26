@@ -17,7 +17,7 @@ export default function OurAppreciation() {
             through our email newsletter. You can use these when you visit us.
           </p>
         </div>
-        <div className="tablet:w-[394px]">
+        <div className="tablet:w-[394px] mt-6 tablet:mt-0">
           <SubscribeForm />
         </div>
       </div>
