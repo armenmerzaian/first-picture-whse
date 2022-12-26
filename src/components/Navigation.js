@@ -64,6 +64,9 @@ export default function Navigation() {
           </li>
         </ul>
         <div className="cursor-pointer laptop:hidden" onClick={handleNav}>
+          {/* <span className="material-icons text-primary-55 text-4xl">
+            {!nav ? "close" : "menu"}
+          </span> */}
           <span className="material-icons text-primary-55 text-4xl">
             {!nav ? "close" : "menu"}
           </span>
