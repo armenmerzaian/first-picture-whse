@@ -123,7 +123,7 @@ export default function ReviewCardCarousel() {
               : () => setSlide(slide - 1)
           }
         >
-          arrow_back
+          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg>
         </span>
         <span
           class={
@@ -169,7 +169,7 @@ export default function ReviewCardCarousel() {
               : () => setSlide(slide + 1)
           }
         >
-          arrow_forward
+          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 40-2.1-2.15L34.25 25.5H8v-3h26.25L21.9 10.15 24 8l16 16Z"/></svg>
         </span>
       </div>
     </div>

@@ -19,7 +19,9 @@ export default function ActionButton({
       <>
         <div className="text-lg flex items-center font-semibold">{label}</div>
         {trailingIcon === true ? (
-          <span className="material-icons flex items-center">arrow_right_alt</span>
+          
+          <span className="material-icons flex items-center"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m28.05 35.9-2.15-2.1 8.4-8.4H8v-3h26.3l-8.45-8.45 2.15-2.1L40.05 23.9Z"/></svg></span>
+          
         ) : (
           ""
         )}
@@ -27,3 +29,4 @@ export default function ActionButton({
     </Link>
   );
 }
+{/* <span className="material-icons flex items-center">arrow_right_alt</span> */}
