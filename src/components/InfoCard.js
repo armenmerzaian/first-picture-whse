@@ -4,7 +4,7 @@ export default function InfoCard() {
   return (
     <>
       <div
-        className="p-4 rounded-2xl bg-surface-6 shadow-sm max-w-[343px] laptop:max-w-[483px] h-fit">
+        className="py-4 px-2 rounded-2xl bg-surface-6 shadow-sm laptop:max-w-[483px] h-fit">
         <div className="text-lg font-semibold min-w-fit">
           <ul>
             <li className="flex gap-8 pb-4 ml-[5px]">
@@ -15,7 +15,7 @@ export default function InfoCard() {
                 </span>
               </div>
               <div
-                className="text-sm laptop:text-lg text-tertiary-light/87 font-light max-w-fit py-3.5 ml-[-4px]">
+                className="text-base laptop:text-lg text-tertiary-light/87 font-light max-w-fit py-3.5 ml-[-4px]">
                 <a href="tel:416-781-9141" className="hover:underline">
                   416-781-9141
                 </a>
@@ -29,7 +29,7 @@ export default function InfoCard() {
                 </span>
               </div>
               <div
-                className="text-sm laptop:text-lg text-tertiary-light/87 font-light max-w-fit mr-4 py-3.5 tracking-wider">
+                className="text-base laptop:text-lg text-tertiary-light/87 font-light max-w-fit mr-4 py-3.5 tracking-wider">
                 <a
                   href="mailto:info@firstpictureframewhse.com?subject=I'm looking for a high quality framing job."
                   className="hover:underline"
@@ -46,14 +46,14 @@ export default function InfoCard() {
                 </span>
               </div>
               <div
-                className="text-sm laptop:text-lg text-tertiary-light/87 font-light max-w-fit ml-[-8px]">
+                className="text-base laptop:text-lg text-tertiary-light/87 font-light max-w-fit ml-[-8px]">
                 <a
                   href="https://goo.gl/maps/W9FHfuPNrmRY4Leh6"
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline"
                 >
-                  3087 Bathurst St, North York, <br /> ON M6A 2A3
+                  3087 Bathurst St, North York, <br className="hidden sketch:block"/> ON M6A 2A3
                 </a>
               </div>
             </li>
