@@ -112,8 +112,8 @@ export default function ReviewCardCarousel() {
         <span
           class={
             slide === 0
-              ? "material-icons mr-4 p-2 text-neutral-20"
-              : "material-icons cursor-pointer mr-4 p-2 text-neutral-60"
+              ? "mr-4 p-3 text-neutral-20"
+              : "cursor-pointer mr-4 p-3 text-neutral-60"
           }
           onClick={
             slide === 0
@@ -123,7 +123,14 @@ export default function ReviewCardCarousel() {
               : () => setSlide(slide - 1)
           }
         >
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="24"
+            fill="rgb(153 153 153)"
+          >
+            <path d="m12 20-8-8 8-8 1.425 1.4-5.6 5.6H20v2H7.825l5.6 5.6Z" />
+          </svg>
         </span>
         <span
           class={
@@ -158,8 +165,8 @@ export default function ReviewCardCarousel() {
         <span
           class={
             slide === 2
-              ? "material-icons ml-4 p-2 text-neutral-20"
-              : "material-icons cursor-pointer ml-4 p-2 text-neutral-60"
+              ? "material-icons ml-4 p-3 text-neutral-20"
+              : "material-icons cursor-pointer ml-4 p-3 text-neutral-60"
           }
           onClick={
             slide === 2
@@ -169,7 +176,14 @@ export default function ReviewCardCarousel() {
               : () => setSlide(slide + 1)
           }
         >
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 40-2.1-2.15L34.25 25.5H8v-3h26.25L21.9 10.15 24 8l16 16Z"/></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="24"
+            fill="rgb(153 153 153)"
+          >
+            <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z" />
+          </svg>
         </span>
       </div>
     </div>

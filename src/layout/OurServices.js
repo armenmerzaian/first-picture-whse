@@ -9,17 +9,20 @@ export default function OurServices() {
 
         <div
           id="action-card-stack"
-          className="flex flex-col laptop:flex-row justify-center items-center gap-6 mt-12"
+          className="flex flex-col laptop:flex-row justify-center items-center gap-6 mt-12 mx-[80px]"
         >
           <ActionCard
+            img=""
             title="Retail"
             text="Our staff will assist you in choosing the right frame, matting, and glazing for you and your artwork."
           />
           <ActionCard
+            img=""
             title="Wholesale"
             text="We sell large quantities of custom picture frames and framing supplies to retail stores at a discounted rate."
           />
           <ActionCard
+            img=""
             title="Production"
             text="Our staff will custom frame the same item in bulk for businesses, art galleries, banks, school graduation pictures and more."
           />

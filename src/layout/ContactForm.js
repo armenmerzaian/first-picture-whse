@@ -27,7 +27,7 @@ export default function ContactForm() {
   // action="https://formspree.io/f/xzbwpnlz"
   // method="POST"
   return (
-    <div className="p-4 tablet:p-8 rounded-2xl bg-surface-6 shadow-sm laptop:pb-9">
+    <div className="p-4 tablet:p-8 rounded-2xl bg-surface-6 shadow-sm laptop:pb-9  h-full">
       <h1 className="text-primary-55 text-lg laptop:text-2xl font-semibold mb-6 webkit-padding">
         Send Us A Message
       </h1>

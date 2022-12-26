@@ -41,7 +41,7 @@ export default function GalleryCarousel() {
       lazy={{
         enabled: true,
         loadPrevNext: true,
-        loadPrevNextAmount: 2
+        loadPrevNextAmount: 2,
       }}
     >
       {gallery.map((url, key) => {
@@ -56,27 +56,28 @@ export default function GalleryCarousel() {
         );
       })}
       <div className="h-[76px]"></div>
-      {/* <span
-        className="custom-swiper-button-prev material-icons-outlined cursor-pointer text-3xl text-neutral-60 hover:text-neutral-80 absolute bottom-0 left-[25%] laptop:left-[37%] z-50 swiper-button-disabled"
+
+      <svg
+        className="custom-swiper-button-prev cursor-pointer absolute bottom-2 left-[25%] laptop:left-[35%] z-50 swiper-button-disabled"
         onClick={navigationPrev}
+        xmlns="http://www.w3.org/2000/svg"
+        height="24"
+        width="24"
+        fill="rgb(153 153 153)"
       >
-        arrow_back
-      </span> */}
-      
-      <svg className="custom-swiper-button-prev material-icons-outlined cursor-pointer text-3xl text-neutral-60 hover:text-neutral-80 absolute bottom-0 left-[25%] laptop:left-[37%] z-50 swiper-button-disabled"
-        onClick={navigationPrev} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg>
-      
-      {/* <span
-        className="custom-swiper-button-next material-icons-outlined cursor-pointer text-3xl text-neutral-60 hover:text-neutral-80 absolute bottom-0 right-[25%] laptop:right-[37%] z-50"
+        <path d="m12 20-8-8 8-8 1.425 1.4-5.6 5.6H20v2H7.825l5.6 5.6Z" />
+      </svg>
+
+      <svg
+        className="custom-swiper-button-next cursor-pointer absolute bottom-2 right-[25%] laptop:right-[35%] z-50"
         onClick={navigationNext}
+        xmlns="http://www.w3.org/2000/svg"
+        height="24"
+        width="24"
+        fill="rgb(153 153 153)"
       >
-        arrow_forward
-      </span> */}
-      
-        <svg className="custom-swiper-button-next material-icons-outlined cursor-pointer text-3xl text-neutral-60 hover:text-neutral-80 absolute bottom-0 right-[25%] laptop:right-[37%] z-50"
-        onClick={navigationNext} xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 40-2.1-2.15L34.25 25.5H8v-3h26.25L21.9 10.15 24 8l16 16Z"/></svg>
-       
-      
+        <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z" />
+      </svg>
     </Swiper>
   );
 }

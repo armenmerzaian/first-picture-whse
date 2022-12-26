@@ -87,11 +87,11 @@ export default function Footer() {
         </div>
 
         <div className="border-b border-neutral-20 rounded-b-full desktop:hidden"></div>
-        <div className="tablet:flex gap-6">
-          <div className="sketch:max-w-fit tablet:max-w-none tablet:flex-grow bg-green-500">
+        <div className="flex flex-col sketch:flex-row laptop:flex-col gap-6 laptop:gap-8">
+          <div className="flex grow flex-1">
             <InfoCard />
           </div>
-          <div className="hidden tablet:block laptop:hidden bg-yellow-500 flex-grow">
+          <div className="hidden tablet:block laptop:hidden flex-grow flex-1">
             <StoreHours />
           </div>
         </div>
