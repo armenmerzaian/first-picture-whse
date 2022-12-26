@@ -33,12 +33,19 @@ export default function Hero({subtitle, img, jumpLink, dblBtn, children, mobileS
           </div>
         </div>
       </div>
-      <div className="w-fit mx-auto mt-10 px-[6px] pt-[2px] !rounded-full laptop:border border-primary-55 animate-bounce">
+      <div className="w-fit mx-auto mt-10 p-1 !rounded-full laptop:border border-primary-55 animate-bounce">
         <Link to={jumpLink}>
           {/* <span className="material-icons text-5xl text-primary-55">
             expand_more
           </span> */}
-          <svg className="border-primary-55" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
+          <svg
+            fill="rgb(255 244 26)"
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            width="48"
+          >
+            <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
+          </svg>
         </Link>
       </div>
     </div>

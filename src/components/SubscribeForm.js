@@ -14,7 +14,7 @@ export default function SubscribeForm() {
     <form
       action="/"
       method="POST"
-      className="flex justify-between gap-6 desktop:flex-col"
+      className="flex justify-between gap-6 tablet:flex-col"
     >
       <div className="w-full">
         <label
@@ -35,7 +35,7 @@ export default function SubscribeForm() {
       </div>
       <button
         onClick={(e) => submit(e)}
-        className="py-2 px-4 bg-primary-55 hover:bg-primary-65 active:bg-primary-75 text-secondary-dark rounded-full self-end desktop:self-start text-lg"
+        className="py-1.5 px-3 laptop:py-2 laptop:px-4 bg-primary-55 hover:bg-primary-65 active:bg-primary-75 text-secondary-dark rounded-full self-end tablet:self-start laptop:self-start text-base laptop:text-lg"
       >
         Subscribe
       </button>
