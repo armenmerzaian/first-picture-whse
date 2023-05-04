@@ -16,10 +16,10 @@ export default function ActionCard({image, title, text}) {
         id="action-card-text"
         className="p-6 flex flex-col justify-between laptop:self-stretch laptop:h-full"
       >
-        <h3 className="text-primary-55 text-lg laptop:text-xl !font-light text-left tablet:text-left">
+        <h3 className="text-primary-55 text-lg laptop:text-xl !font-semibold text-left tablet:text-left">
           {title}
         </h3>
-        <p className="text-tertiary-light/87 font-light !text-sm laptop:text-lg text-left mt-1 mb-4">
+        <p className="text-tertiary-light/87 font-light !text-sm laptop:!text-lg text-left mt-1 mb-4">
           {text}
         </p>
         <div className="hidden tablet:block !text-sm">
@@ -27,7 +27,7 @@ export default function ActionCard({image, title, text}) {
             label="Learn more"
             trailingIcon={true}
             to="/services"
-            fontSize="text-sm"
+            fontSize="text-lg"
             padding="py-[6px] px-[12px]"
           />
         </div>

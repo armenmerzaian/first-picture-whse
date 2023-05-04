@@ -11,7 +11,7 @@ export default function ServicesTabbed() {
   return (
     <div
       id="services-offered"
-      className="w-[792px] mx-auto px-[49px] py-6 bg-surface-1 rounded-2xl"
+      className="laptop:w-[902px] desktop:w-[998px] mx-auto px-[49px] py-6 bg-surface-1 rounded-2xl"
     >
       <div className="">
         <div id="tab-buttons" className="border-b border-neutral-20">
@@ -100,9 +100,9 @@ export default function ServicesTabbed() {
 
 function TabbedCard({title, text}) {
     return (
-        <div className="p-6 bg-surface-3 rounded-xl max-w-[331px] h-[160px] space-y-2">
+        <div className="p-6 bg-surface-3 rounded-xl w-full min-h-fit space-y-2">
             <h1 className="text-xl leading-8 font-regular text-primary-55">{title}</h1>
-            <p className="text-base leading-6 font-light text-tertiary-light/87">{text}</p>
+            <p className="text-lg leading-8 font-light text-tertiary-light/87">{text}</p>
         </div>
     )
 }

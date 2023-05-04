@@ -5,28 +5,28 @@ import SectionTitle from '../components/SectionTitle';
 export default function OurServices() {
   return (
     <div id="our-services" className="pt-32">
-      <SectionTitle text="Our Services"/>
+      <SectionTitle text="Our Services" />
 
-        <div
-          id="action-card-stack"
-          className="flex flex-col laptop:flex-row justify-center items-center gap-6 mt-12 mx-[80px]"
-        >
-          <ActionCard
-            img=""
-            title="Retail"
-            text="Our staff will assist you in choosing the right frame, matting, and glazing for you and your artwork."
-          />
-          <ActionCard
-            img=""
-            title="Wholesale"
-            text="We sell large quantities of custom picture frames and framing supplies to retail stores at a discounted rate."
-          />
-          <ActionCard
-            img=""
-            title="Production"
-            text="Our staff will custom frame the same item in bulk for businesses, art galleries, banks, school graduation pictures and more."
-          />
-        </div>
+      <div
+        id="action-card-stack"
+        className="flex flex-col laptop:flex-row justify-center items-center gap-6 mt-12 mx-[80px] laptop:mx-auto max-w-[1088px] desktop:max-w-[1204px]"
+      >
+        <ActionCard
+          img=""
+          title="Retail"
+          text="Our staff will assist you in choosing the right frame, matting, and glazing for you and your artwork."
+        />
+        <ActionCard
+          img=""
+          title="Wholesale"
+          text="We sell large quantities of custom picture frames and framing supplies to retail stores at a discounted rate."
+        />
+        <ActionCard
+          img=""
+          title="Production"
+          text="Our staff will custom frame the same item in bulk for businesses, art galleries, banks, school graduation pictures and more."
+        />
+      </div>
     </div>
   );
 }

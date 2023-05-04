@@ -8,7 +8,7 @@ export default function HowWeDo() {
       <SectionTitle text="How We Do Things" />
       <div
         id="numbered-card-stack"
-        className="mt-16 flex flex-col tablet:flex-row gap-10 items-center tablet:justify-center tablet:mx-8 tablet:gap-6 laptop:gap-8"
+        className="mt-16 flex flex-col tablet:flex-row gap-10 items-center tablet:justify-center tablet:mx-8 tablet:gap-6 laptop:gap-8 laptop:max-w-[1088px] desktop:max-w-[1204px] laptop:mx-auto"
       >
         <NumberedCard
           number="1"
@@ -19,7 +19,7 @@ export default function HowWeDo() {
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             width="48"
-            className="mx-auto tablet:ml-0 tablet:mr-auto laptop:mx-auto"
+            className="mx-auto"
             fill="#fff64d"
           >
             <path d="M7 43.95q-1.2 0-2.1-.875Q4 42.2 4 40.95V11q0-1.2.9-2.1Q5.8 8 7 8h9l6.95-7q.4-.4 1.05-.4t1.05.4L32 8h9q1.2 0 2.1.9.9.9.9 2.1v29.95q0 1.25-.9 2.125t-2.1.875Zm0-3h34V11H7v29.95Zm6.5-5q-.65 0-1.075-.425Q12 35.1 12 34.45V17.5q0-.65.425-1.075Q12.85 16 13.5 16h21q.65 0 1.075.425Q36 16.85 36 17.5v16.95q0 .65-.425 1.075-.425.425-1.075.425Z" />
@@ -38,7 +38,7 @@ export default function HowWeDo() {
             height="48"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 24 24"
-            className="mx-auto tablet:ml-0 tablet:mr-auto laptop:mx-auto"
+            className="mx-auto"
           >
             <path
               fill="#fff64d"
@@ -59,7 +59,7 @@ export default function HowWeDo() {
             height="48"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 24 24"
-            className="mx-auto tablet:ml-0 tablet:mr-auto laptop:mx-auto"
+            className="mx-auto"
           >
             <path
               fill="#fff64d"

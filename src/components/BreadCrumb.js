@@ -5,7 +5,7 @@ export default function BreadCrumb({crumbs}) {
 
   return (
     <div className="hidden laptop:block fixed z-10 top-[98px] left-0 right-0 h-12 py-3 border-b-2 border-neutral-20 bg-secondary-dark">
-      <div className="text-tertiary-light/87 font-light text-sm leading-6 space-x-2 max-w-[1200px] mx-auto">
+      <div className="text-tertiary-light/87 font-light text-base leading-6 space-x-2 max-w-[1088px] desktop:max-w-[1204px] mx-auto">
         {crumbs.map((crumb, key) => {
           return (
             <>

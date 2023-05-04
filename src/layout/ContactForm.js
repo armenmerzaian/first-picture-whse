@@ -43,13 +43,13 @@ export default function ContactForm() {
             name="first_name"
             id="first_name"
             placeholder="Enter your first name"
-            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7 order-3 justify-start"
+            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-base text-tertiary-light h-7 order-3 justify-start"
             required
             minLength={2}
           />
           <label
             htmlFor="first_name"
-            className="text-sm leading-6 text-tertiary-light order-1"
+            className="text-base leading-6 text-tertiary-light order-1"
           >
             First Name
           </label>
@@ -60,13 +60,13 @@ export default function ContactForm() {
             name="last_name"
             id="last_name"
             placeholder="Enter your last name"
-            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7 order-3"
+            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-base text-tertiary-light h-7 order-3"
             required
             minLength={2}
           />
           <label
             htmlFor="last"
-            className="text-sm leading-6 text-tertiary-light order-1"
+            className="text-base leading-6 text-tertiary-light order-1"
           >
             Last Name
           </label>
@@ -77,13 +77,13 @@ export default function ContactForm() {
             name="email"
             id="emailInput"
             placeholder="Enter your email"
-            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-sm text-tertiary-light h-7 order-3"
+            className="bg-transparent border-x-0 border-t-0 border-b appearance-none w-full pl-0 text-base text-tertiary-light h-7 order-3"
             required
             pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
           />
           <label
             htmlFor="emailInput"
-            className="text-sm leading-6 text-tertiary-light order-1"
+            className="text-base leading-6 text-tertiary-light order-1"
           >
             Email
           </label>
@@ -94,13 +94,13 @@ export default function ContactForm() {
             name="tel_number"
             id="tel_number"
             placeholder="Enter your phone number"
-            className="bg-transparent border-x-0 border-t-0 border-b appearance-none pl-0 text-sm text-tertiary-light h-7 order-3"
+            className="bg-transparent border-x-0 border-t-0 border-b appearance-none pl-0 text-base text-tertiary-light h-7 order-3"
             required
             pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
           />
           <label
             htmlFor="tel_number"
-            className="text-sm leading-6 text-tertiary-light order-1"
+            className="text-base leading-6 text-tertiary-light order-1"
           >
             Phone
           </label>
@@ -109,13 +109,13 @@ export default function ContactForm() {
           <textarea
             type="text"
             name="message"
-            className="w-full bg-transparent rounded-lg mt-1 text-sm resize-none h-[179px] order-2 text-tertiary-light"
+            className="w-full bg-transparent rounded-lg mt-1 text-base resize-none h-[179px] order-2 text-tertiary-light"
             placeholder="Send us a message..."
             required
             maxLength={300}
             minLength={20}
           />
-          <label className="laptop:col-span-full text-sm leading-6 text-tertiary-light order-1">
+          <label className="laptop:col-span-full text-base leading-6 text-tertiary-light order-1">
             Message
           </label>
         </div>
@@ -170,7 +170,7 @@ function ErrorModal({ errorModalShow, setErrorModalShow}) {
         <h3 className="text-primary-55 text-xl leading-8 font-bold text-center mb-2">
           Oops!
         </h3>
-        <p className="text-center text-tertiary-light/87 text-sm laptop:text-base px-[12px] leading-loose mb-5">
+        <p className="text-center text-tertiary-light/87 text-base laptop:text-base px-[12px] leading-loose mb-5">
           Your form could not be submitted.{" "}
           <span className="block">Try again later.</span>
         </p>

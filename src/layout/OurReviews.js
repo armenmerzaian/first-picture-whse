@@ -8,7 +8,7 @@ export default function OurReviews() {
     <div id="our-reviews" className="pt-24 laptop:pt-[6rem]">
       <h4
         id=""
-        className="text-sm font-regular text-tertiary-light/38 mt-24 text-center"
+        className="text-lg font-regular text-tertiary-light/38 mt-24 text-center"
       >
         WHAT OUR CUSTOMERS HAVE TO SAY
       </h4>
