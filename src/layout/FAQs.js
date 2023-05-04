@@ -8,7 +8,7 @@ export default function FAQs() {
       <SectionTitle text="FAQs" />
       <div
         id="according-stack"
-        className="mt-12 space-y-4 max-w-[996px] mx-auto"
+        className="mt-12 space-y-4 max-w-[902px] desktop:max-w-[996px] mx-auto"
       >
         <Accordion
           question="What are the benefits of custom framing?"

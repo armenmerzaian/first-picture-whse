@@ -8,7 +8,7 @@ export default function BenefitsCustom() {
       <SectionTitle text="Benefits of Custom Framing" />
       <div
         id="icon-card-group"
-        className="grid grid-cols-2 laptop:grid-cols-4 gap-4 laptop:gap-12 mt-28 w-fit mx-auto"
+        className="grid grid-cols-2 laptop:grid-cols-4 gap-4 laptop:gap-12 mt-28 w-fit mx-auto max-w-[1088px] desktop:max-w-[1204px]"
       >
         <IconCard
           className=""

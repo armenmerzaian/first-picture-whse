@@ -9,7 +9,7 @@ export default function Navigation() {
   }
   return (
     <div className="text-tertiary-light/87 py-4 desktop:px-[120px] items-center fixed z-10 top-0 left-0 right-0 bg-secondary-dark border-b-2 border-neutral-20">
-      <div className="flex justify-between w-full mx-auto max-w-[1200px] px-4 laptop:px-0">
+      <div className="flex justify-between w-full mx-auto max-w-[1088px] desktop:max-w-[1204px] px-4 laptop:px-0">
         <Link to="/" className="shrink-0 h-fit my-auto">
           <img
             src="images/navbar-brand.svg"

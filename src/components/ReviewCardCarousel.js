@@ -13,7 +13,7 @@ export default function ReviewCardCarousel() {
     {
       name: "Duane M",
       img: "images/profile.png",
-      text: "I have had almost every single one of the pictures in my house framed by Aris and some have been dry mounted. If it can be done and done right, this is the place to have it done. Nothing is too difficult, nothing is impossible.",
+      text: "I have had almost every single one of the pictures in my house framed by Aris and some have been dry mounted. If it can be done and done right, this is the place to have it done.",
     },
     {
       name: "[NAME]",
@@ -38,7 +38,7 @@ export default function ReviewCardCarousel() {
   ];
 
   return (
-    <div className="max-w-[1200px] mx-auto">
+    <div className="max-w-[1088px] desktop:max-w-[1200px] mx-auto">
       <div className={slide === 0 ? "" : "hidden"}>
         <div className="hidden laptop:block">
           <div className="flex gap-8 relative">

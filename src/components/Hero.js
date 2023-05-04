@@ -5,17 +5,17 @@ import HeroImage from "../components/HeroImage";
 
 export default function Hero({subtitle, img, jumpLink, dblBtn, children, mobileSubtitle}) {
   return (
-    <div className="max-w-[1204px] mt-10 mx-auto">
-      <div className="laptop:flex flex-row-reverse laptop:justify-between gap-[127px] space-y-12 tablet:space-y-14">
+    <div className="max-w-[1088px] desktop:max-w-[1204px] mt-10 mx-auto">
+      <div className="laptop:flex flex-row-reverse laptop:justify-between gap-[70px] space-y-12 tablet:space-y-14">
         <HeroImage img={img} />
-        <div className="laptop:self-center max-w-[705px] mx-auto">
-          <div className="w-fit laptop:px-0 mx-auto">
+        <div className="laptop:self-center mx-auto laptop:mx-0 max-w-[705px]">
+          <div className="w-fit mx-auto laptop:px-0">
             {children}
             <p
               className={
                 subtitle && mobileSubtitle === false
-                  ? "hidden text-tertiary-light/60 tablet:block laptop:inline-block mx-auto w-fit text-center laptop:text-left text-lg font-light laptop:text-xl mb-12 tablet:w-[545px] desktop:w-[673px]"
-                  : "text-tertiary-light/60 tablet:block laptop:inline-block mx-auto w-fit text-center laptop:text-left text-lg font-light laptop:text-xl mb-12 tablet:w-[545px] desktop:w-[673px]"
+                  ? "hidden text-tertiary-light/60 tablet:block laptop:inline-block mx-auto w-fit text-center laptop:text-left text-lg font-light laptop:text-xl mb-12 tablet:w-[545px] laptop:w-[673px]"
+                  : "text-tertiary-light/60 tablet:block laptop:inline-block mx-auto w-fit text-center laptop:text-left text-lg font-light laptop:text-xl mb-12 tablet:w-[545px] laptop:w-[673px]"
               }
             >
               {subtitle}
@@ -33,18 +33,21 @@ export default function Hero({subtitle, img, jumpLink, dblBtn, children, mobileS
           </div>
         </div>
       </div>
-      <div className="w-fit mx-auto mt-10 p-1 !rounded-full laptop:border border-primary-55 animate-bounce">
+      <div className="w-fit mx-auto mt-10 p-2 desktop:p-4 !rounded-full laptop:border-2 border-primary-55 animate-bounce">
         <Link to={jumpLink}>
-          {/* <span className="material-icons text-5xl text-primary-55">
-            expand_more
-          </span> */}
           <svg
-            fill="rgb(255 244 26)"
+            className="flex-shrink-0 m-1 w-5 h-5 desktop:scale-150 transition duration-400 group-open:-rotate-180"
             xmlns="http://www.w3.org/2000/svg"
-            height="48"
-            width="48"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="#FFF41A"
           >
-            <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="4"
+              d="M19 9l-7 7-7-7"
+            />
           </svg>
         </Link>
       </div>

@@ -34,7 +34,7 @@ function aboutUs() {
           jumpLink="/aboutUs#our-purpose"
           dblBtn={false}
         >
-          <p className="text-primary-85 text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl leading-[48px] font-bold text-center laptop:text-left px-6 laptop:pl-0 mb-6">
+          <p className="text-tertiary-light text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl leading-[48px] font-bold text-center laptop:text-left px-6 laptop:pl-0 mb-6">
             About Us
           </p>
         </Hero>

@@ -8,7 +8,7 @@ function gallery() {
   return (
     <div className="bg-secondary-dark">
       <Navigation />
-      <div className="pt-[100px] laptop:pt-[120px] h-[87vh] tablet:h-[107vh]">
+      <div className="pt-[100px] laptop:pt-[140px] h-[87vh] tablet:h-[130vh]">
         <SectionTitle text="Our Work" />
         <div className="mt-12 w-full tablet:w-[768px] laptop:w-[800px] mx-auto px-4 tablet:px-6">
           <GalleryCarousel />

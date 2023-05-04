@@ -35,7 +35,7 @@ function services() {
           jumpLink="/services#services-offered"
           dblBtn={false}
         >
-          <p className="text-primary-85 text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl leading-[48px] font-bold text-center laptop:text-left mb-6">
+          <p className="text-tertiary-light text-4xl tablet:text-5xl laptop:text-6xl desktop:text-7xl leading-[48px] font-bold text-center laptop:text-left mb-6">
             Our Services
           </p>
         </Hero>
