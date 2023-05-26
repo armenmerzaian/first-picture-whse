@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import ActionButton from './ActionButton';
 
 export default function ServicesTabbed() {
-    const [toggleState, setToggleState] = useState(3);
+    const [toggleState, setToggleState] = useState(1);
 
     function toggleTab(index) {
       setToggleState(index);
@@ -54,7 +54,7 @@ export default function ServicesTabbed() {
           >
             <TabbedCard
               title="Who This Service is For"
-              text="Customers looking to custom frame up to half a dozen items"
+              text="Customers who are looking to custom frame any number of their personal momentos, family photos, collages, documents, certificates, degrees, home decor and artworks."
             />
             <TabbedCard
               title="What We Do"
@@ -68,11 +68,11 @@ export default function ServicesTabbed() {
           >
             <TabbedCard
               title="Who This Service is For"
-              text="Customers or businesses looking for custom framing services in bulk up to 100 items."
+              text="Customers who are retail business's, designers or large institutions looking for custom or large scale custom or bulk framing "
             />
             <TabbedCard
               title="What We Do"
-              text="We sell large quantities of custom picture frames and framing supplies to retail stores at a discounted rate"
+              text="We provide clients with high quality custom framing at wholesale prices* as well as regularly scheduled pickup and delivery*.  We also provide framing supplies*"
             />
           </div>
           <div
@@ -82,11 +82,11 @@ export default function ServicesTabbed() {
           >
             <TabbedCard
               title="Who This Service is For"
-              text="Art galleries, banks, schools, businesses"
+              text="Institutions, banks, schools, hotels, etc. who are in need of large quantities of custom framing."
             />
             <TabbedCard
               title="What We Do"
-              text="Our staff will custom frame the same item in bulk for businesses, art galleries, banks, school graduations and more"
+              text="We will assist the client in designing the best kind of framing for their needs and budget.  Provide excellent quality framing, packaging* and delivery* in a timely and efficient manner."
             />
           </div>
         </div>

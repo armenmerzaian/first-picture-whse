@@ -10,8 +10,8 @@ function gallery() {
       <Navigation />
       <div className="pt-[100px] laptop:pt-[140px] h-[87vh] tablet:h-[130vh]">
         <SectionTitle text="Our Work" />
-        <div className="mt-12 w-full tablet:w-[768px] laptop:w-[800px] mx-auto px-4 tablet:px-6">
-          <GalleryCarousel />
+          <div className="mt-12 w-[80%] tablet:w-[768px] laptop:w-[800px] mx-auto">
+            <GalleryCarousel />
         </div>
       </div>
       <div className="pt-8 laptop:pt-28">

@@ -14,17 +14,17 @@ export default function OurServices() {
         <ActionCard
           img=""
           title="Retail"
-          text="Our staff will assist you in choosing the right frame, matting, and glazing for you and your artwork."
+          text="For home owners, designers, offices or anyone looking to frame a poster, limited edition print, needle point, canvas, sports jersey or almost anything you want to enhance and bring to life in your space."
         />
         <ActionCard
           img=""
           title="Wholesale"
-          text="We sell large quantities of custom picture frames and framing supplies to retail stores at a discounted rate."
+          text="For designers, photographers, galleries, artists and other business looking to establish a relationship in great quality custom framing, either single or bulk."
         />
         <ActionCard
           img=""
           title="Production"
-          text="Our staff will custom frame the same item in bulk for businesses, art galleries, banks, school graduation pictures and more."
+          text="For institutions, banks, hotels, schools or other organizations who need large quantities of framing whether that's a simple diploma or elaborate memorabilia and almost anything in-between."
         />
       </div>
     </div>

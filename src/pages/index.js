@@ -50,7 +50,6 @@ export default function IndexPage() {
 
           <FAQs />
 
-          <OurAppreciation />
         </div>
       </div>
       <Footer />

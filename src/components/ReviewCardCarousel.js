@@ -6,34 +6,28 @@ export default function ReviewCardCarousel() {
 
   const reviews = [
     {
+      name: "Marilyn Freedman",
+      text: "I have been a customer of The First Picture Frame for over 20 years.  This is a family owned business and the service is excellent. Most of the time I let them pick out the mats and frames for me and it is a collaboration.",
+    },
+    {
+      name: "Greg",
+      text: "My framed ads were professionally done and exceeded my expectations. This is the place to frame your personal art or prints. Highly recommended!.",
+    },
+    {
       name: "Emily",
-      img: "images/profile.png",
       text: "Had a poster framed and it's absolutely stunning, the colour and attention to detail. This was an old document that I hadn't taken care of and Gregory turned it into a beautiful piece.",
     },
     {
       name: "Duane M",
-      img: "images/profile.png",
       text: "I have had almost every single one of the pictures in my house framed by Aris and some have been dry mounted. If it can be done and done right, this is the place to have it done.",
     },
     {
-      name: "[NAME]",
-      img: "images/profile.png",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Mark",
+      text: "Wonderful, personalized service including going that extra mile for their customer.",
     },
     {
-      name: "[NAME2]",
-      img: "images/profile.png",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "[NAME3]",
-      img: "images/profile.png",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "[NAME4]",
-      img: "images/profile.png",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Daniel",
+      text: "Been going here for years. Absolute pros!",
     },
   ];
 
@@ -45,12 +39,12 @@ export default function ReviewCardCarousel() {
             <ReviewCard
               msg={reviews[0].text}
               name={reviews[0].name}
-              img={reviews[0].img}
+              img={<ReviewImage character="M" />}
             ></ReviewCard>
             <ReviewCard
               msg={reviews[1].text}
               name={reviews[1].name}
-              img={reviews[1].img}
+              img={<ReviewImage character="G" />}
             ></ReviewCard>
           </div>
         </div>
@@ -58,7 +52,7 @@ export default function ReviewCardCarousel() {
           <ReviewCard
             msg={reviews[0].text}
             name={reviews[0].name}
-            img={reviews[0].img}
+            img={<ReviewImage character="M" />}
           ></ReviewCard>
         </div>
       </div>
@@ -68,12 +62,12 @@ export default function ReviewCardCarousel() {
             <ReviewCard
               msg={reviews[2].text}
               name={reviews[2].name}
-              img={reviews[2].img}
+              img={<ReviewImage character="E" />}
             ></ReviewCard>
             <ReviewCard
               msg={reviews[3].text}
               name={reviews[3].name}
-              img={reviews[3].img}
+              img={<ReviewImage character="D" />}
             ></ReviewCard>
           </div>
         </div>
@@ -81,7 +75,7 @@ export default function ReviewCardCarousel() {
           <ReviewCard
             msg={reviews[1].text}
             name={reviews[1].name}
-            img={reviews[1].img}
+            img={<ReviewImage character="G" />}
           ></ReviewCard>
         </div>
       </div>
@@ -91,12 +85,12 @@ export default function ReviewCardCarousel() {
             <ReviewCard
               msg={reviews[4].text}
               name={reviews[4].name}
-              img={reviews[4].img}
+              img={<ReviewImage character="M" />}
             ></ReviewCard>
             <ReviewCard
               msg={reviews[5].text}
               name={reviews[5].name}
-              img={reviews[5].img}
+              img={<ReviewImage character="D" />}
             ></ReviewCard>
           </div>
         </div>
@@ -104,7 +98,7 @@ export default function ReviewCardCarousel() {
           <ReviewCard
             msg={reviews[2].text}
             name={reviews[2].name}
-            img={reviews[2].img}
+            img={<ReviewImage character="E" />}
           ></ReviewCard>
         </div>
       </div>
@@ -189,3 +183,16 @@ export default function ReviewCardCarousel() {
     </div>
   );
 }
+
+
+function ReviewImage({character}) {
+
+
+  return (
+    <div class="!rounded-full p-1 border-2 tablet:p-3 border-primary-75 w-12 h-12 flex justify-center items-center">
+      <p class="text-primary-75 font-bold text-lg">{character}</p>
+    </div>
+  );
+}
+
+

@@ -1,5 +1,13 @@
-.swiper-pagination{
+
+.swiper-pagination {
     scale: 150%;
+
+    max-width: fit-content;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
 }
 
 .swiper-pagination-bullet{
@@ -9,6 +17,10 @@
     background-color: #fff41a;
     filter: none;
 }
+
+
+
+
 
 
 
