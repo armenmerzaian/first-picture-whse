@@ -30,7 +30,7 @@ function aboutUs() {
       <div className="pt-[100px] laptop:pt-[196px] pb-[162px] bg-secondary-dark text-tertiary-light px-4">
         <Hero
           subtitle="Our mission is to fulfill our customers' custom framing needs. We take pride in knowing we've delivered custom framing solutions consistently for over 30 years, no matter the difficulty of the challenge we faced."
-          img="images/hero-image.png"
+          img="images/about_hero.jpg"
           jumpLink="/aboutUs#our-purpose"
           dblBtn={false}
         >

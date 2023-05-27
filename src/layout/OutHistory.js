@@ -10,7 +10,7 @@ export default function OutHistory() {
       <AboutSectionTitle title="Our Story" />
       <p className="text-base tablet:text-lg laptop:text-xl py-2 px-8 laptop:p-0 text-center font-light text-tertiary-light/87 max-w-[689px] mx-auto">
         We've been in business under the same ownership since our beginnings
-        over 30 years ago.
+        over 38 years ago.
       </p>
 
       <div className="flex justify-between tablet:justify-around pt-10 max-w-[1204px] mx-auto">
@@ -26,11 +26,11 @@ export default function OutHistory() {
             </svg>
           </div>
           <p className="text-sm tablet:text-base laptop:text-lg desktop:text-xl leading-6 font-light text-tertiary-light/87 text-center px-4 laptop:w-[251px]">
-            Partnership since <span className="text-primary-65">1984</span>
+            Partnership est. <span className="text-primary-65">1984</span>
           </p>
         </div>
 
-        <span class="material-icons-outlined text-neutral-20 h-fit self-center text-base laptop:text-4xl animate-pulse">
+        <span className="material-icons-outlined text-neutral-20 h-fit self-center text-base laptop:text-4xl animate-pulse">
           arrow_right_alt
         </span>
 
@@ -58,11 +58,11 @@ export default function OutHistory() {
             </svg>
           </div>
           <p className="text-sm tablet:text-base laptop:text-lg desktop:text-xl leading-6 font-light text-tertiary-light/87 text-center px-4 laptop:w-[251px]">
-            Incorporated in <span className="text-primary-65">1993</span>
+            Incorporated in <span className="text-primary-65 block">1993</span>
           </p>
         </div>
 
-        <span class="material-icons-outlined text-neutral-20 h-fit self-center text-base laptop:text-4xl animate-pulse">
+        <span className="material-icons-outlined text-neutral-20 h-fit self-center text-base laptop:text-4xl animate-pulse">
           arrow_right_alt
         </span>
 
@@ -81,8 +81,8 @@ export default function OutHistory() {
             </svg>
           </div>
           <p className="text-sm tablet:text-base laptop:text-lg desktop:text-xl leading-6 font-light text-tertiary-light/87 text-center px-2 laptop:w-[251px]">
-            Same staff for over{" "}
-            <span className="text-primary-65">32 years</span>
+            Same staff over{" "}
+            <span className="text-primary-65 block">38 years</span>
           </p>
         </div>
       </div>

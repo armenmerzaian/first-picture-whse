@@ -4,7 +4,6 @@ import Navigation from "../components/Navigation";
 import OurServices from "../layout/OurServices";
 import OurReviews from "../layout/OurReviews";
 import FAQs from "../layout/FAQs";
-import OurAppreciation from "../layout/OurAppreciation";
 import Hero from "../components/Hero";
 import BreadCrumb from "../components/BreadCrumb";
 
@@ -31,7 +30,7 @@ export default function IndexPage() {
       <div className="pt-[100px] laptop:pt-[168px] desktop:[pt-200px] pb-36 px-4 tablet:px-6">
         <Hero
           subtitle="We are ready for any custom framing challenge. With our knowledge and expertise, we strive to make your framing dreams come true!"
-          img="images/hero-image.png"
+          img="images/index_hero.jpg"
           jumpLink="/#our-services"
           mobileSubtitle={false}
         >
@@ -50,7 +49,6 @@ export default function IndexPage() {
 
           <FAQs />
 
-          <OurAppreciation />
         </div>
       </div>
       <Footer />
