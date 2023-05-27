@@ -14,7 +14,7 @@ export default function InfoCard() {
 
       <Info
         label="Email"
-        info="info@firstpictureframewhse.com"
+        info="firstpictureframewhse@gmail.com"
         className="border-y-2 border-neutral-20 py-1 laptop:py-2 gap-[27px] laptop:gap-[40px] pl-[7px] laptop:pl-[9px]"
         link="mailto:info@firstpictureframewhse.com?subject=I'm looking for a high quality framing job."
       >
