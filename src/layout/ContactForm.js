@@ -11,7 +11,7 @@ export default function ContactForm() {
   function handleClick(e) {
 
     let data = new FormData(e.target);
-    let action = "https://www.formbackend.com/f/08da67ac6f24201c";
+    let action = "https://www.formbackend.com/f/ee9a0bc3399546a1";
     let request = new XMLHttpRequest();
     request.open("POST", action, true);
     request.onerror = function() {
