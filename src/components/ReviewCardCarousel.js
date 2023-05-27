@@ -104,7 +104,7 @@ export default function ReviewCardCarousel() {
       </div>
       <div className="w-fit mx-auto text-neutral-20 flex items-center gap-0.5 mt-[32px] tablet:mt-[56px]">
         <span
-          class={
+          className={
             slide === 0
               ? "mr-4 p-3 text-neutral-20"
               : "cursor-pointer mr-4 p-3 text-neutral-60"
@@ -127,8 +127,8 @@ export default function ReviewCardCarousel() {
           </svg>
         </span>
         <span
-          class={
-            slide == 0
+          className={
+            slide === 0
               ? "material-icons text-primary-55"
               : "material-icons text-lg cursor-pointer"
           }
@@ -137,8 +137,8 @@ export default function ReviewCardCarousel() {
           fiber_manual_record
         </span>
         <span
-          class={
-            slide == 1
+          className={
+            slide === 1
               ? "material-icons text-primary-55"
               : "material-icons text-lg cursor-pointer"
           }
@@ -147,8 +147,8 @@ export default function ReviewCardCarousel() {
           fiber_manual_record
         </span>
         <span
-          class={
-            slide == 2
+          className={
+            slide === 2
               ? "material-icons text-primary-55"
               : "material-icons text-lg cursor-pointer"
           }
@@ -157,7 +157,7 @@ export default function ReviewCardCarousel() {
           fiber_manual_record
         </span>
         <span
-          class={
+          className={
             slide === 2
               ? "material-icons ml-4 p-3 text-neutral-20"
               : "material-icons cursor-pointer ml-4 p-3 text-neutral-60"
@@ -189,8 +189,8 @@ function ReviewImage({character}) {
 
 
   return (
-    <div class="!rounded-full p-1 border-2 tablet:p-3 border-primary-75 w-12 h-12 flex justify-center items-center">
-      <p class="text-primary-75 font-bold text-lg">{character}</p>
+    <div className="!rounded-full p-1 border-2 tablet:p-3 border-primary-75 w-12 h-12 flex justify-center items-center">
+      <p className="text-primary-75 font-bold text-lg">{character}</p>
     </div>
   );
 }

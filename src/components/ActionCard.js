@@ -2,12 +2,12 @@ import React from 'react'
 import ActionButton from './ActionButton';
 
 
-export default function ActionCard({image, title, text}) {
+export default function ActionCard({img, title, text}) {
   return (
     <div className="!bg-surface-1 min-w-[272px] mx-2 tablet:w-[611px] rounded-xl min-h-[256px] tablet:min-h-fit tablet:max-h-[240px] laptop:max-h-min flex flex-col tablet:flex-row laptop:flex-col laptop:self-stretch">
       <div id="action-card-header" className="flex-grow tablet:flex-grow-0">
         <img
-          src="images/action-card-image.png"
+          src={img}
           alt="action card"
           className="object-cover w-full rounded-t-xl tablet:rounded-r-none tablet:rounded-l-xl laptop:rounded-tr-xl laptop:rounded-b-none h-[240px] tablet:min-w-[204px]"
         />

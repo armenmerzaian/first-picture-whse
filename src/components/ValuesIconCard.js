@@ -4,7 +4,7 @@ export default function ValuesIconCard({icon, value, text, font, children}) {
   return (
     <div className="flex flex-col items-center tablet:items-start laptop:items-start bg-surface-1 w-full rounded-2xl gap-6 p-4 pt-8 tablet:p-6 tablet:pt-10 laptop:p-8 laptop:pt-12 tablet:max-w-[611px] laptop:max-w-[981px] tablet:mx-auto">
       <span
-        class="text-primary-65 text-5xl laptop:text-6xl"
+        className="text-primary-65 text-5xl laptop:text-6xl"
       >
         {children}
       </span>

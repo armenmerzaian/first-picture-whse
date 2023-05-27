@@ -1,5 +1,4 @@
 import * as React from "react";
-import Footer from '../layout/Footer';
 import {Link} from "gatsby";
 
 
@@ -15,7 +14,7 @@ const NotFoundPage = () => {
           />
         </Link>
         <span className="font-light text-[176px] text-primary-55">404</span>
-        <span className="font-regular text-[23px] text-tertiary-light/38">
+        <span className="font-regular text-[23px] text-tertiary-light/38 text-center">
           This page is unavailable at the moment. Please try again later!
         </span>
       </div>

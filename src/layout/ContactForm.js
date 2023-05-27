@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState} from 'react'
 import Modal from "../components/Modal";
 import "../styles/form-errors.css";
 import "../styles/webkit-styles.css"
@@ -65,7 +65,7 @@ export default function ContactForm() {
             minLength={2}
           />
           <label
-            htmlFor="last"
+            htmlFor="last_name"
             className="text-base leading-6 text-tertiary-light order-1"
           >
             Last Name
@@ -115,7 +115,9 @@ export default function ContactForm() {
             maxLength={300}
             minLength={20}
           />
-          <label className="laptop:col-span-full text-base leading-6 text-tertiary-light order-1">
+          <label
+          htmlFor='message' 
+          className="laptop:col-span-full text-base leading-6 text-tertiary-light order-1">
             Message
           </label>
         </div>

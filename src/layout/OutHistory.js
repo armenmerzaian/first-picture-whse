@@ -30,7 +30,7 @@ export default function OutHistory() {
           </p>
         </div>
 
-        <span class="material-icons-outlined text-neutral-20 h-fit self-center text-base laptop:text-4xl animate-pulse">
+        <span className="material-icons-outlined text-neutral-20 h-fit self-center text-base laptop:text-4xl animate-pulse">
           arrow_right_alt
         </span>
 
@@ -62,7 +62,7 @@ export default function OutHistory() {
           </p>
         </div>
 
-        <span class="material-icons-outlined text-neutral-20 h-fit self-center text-base laptop:text-4xl animate-pulse">
+        <span className="material-icons-outlined text-neutral-20 h-fit self-center text-base laptop:text-4xl animate-pulse">
           arrow_right_alt
         </span>
 
