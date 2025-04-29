@@ -4,7 +4,7 @@ import ActionButton from './ActionButton';
 
 export default function ActionCard({img, title, text}) {
   return (
-    <div className="!bg-surface-1 min-w-[272px] mx-2 tablet:w-[611px] rounded-xl min-h-[256px] tablet:min-h-fit tablet:max-h-[240px] laptop:max-h-min flex flex-col tablet:flex-row laptop:flex-col laptop:self-stretch">
+    <div className="!bg-surface-1 min-w-[272px] mx-2 tablet:w-[611px] rounded-xl min-h-[256px] tablet:min-h-fit tablet:max-h-[240px] laptop:max-h-[400px] flex flex-col tablet:flex-row laptop:flex-col laptop:self-stretch">
       <div id="action-card-header" className="flex-grow tablet:flex-grow-0">
         <img
           src={img}
