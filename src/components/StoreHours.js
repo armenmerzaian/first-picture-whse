@@ -56,7 +56,7 @@ export default function StoreHours() {
           info="9:30am - 4:00pm"
           className="border-b-2 border-b-neutral-20"
         />
-        <Info label="Saturday:" info="10:00am - 4:00pm" />
+        <InfoWithSubLabel label="Saturday:" info="10:00am - 4:00pm" subLabel="(Closed Long Weekends)" />
       </div>
     </div>
   );
@@ -71,6 +71,20 @@ function Info({label, info, className}){
      <span>
       {info}
      </span>
+    </div>
+  );
+}
+
+function InfoWithSubLabel({ label, info, subLabel, className }) {
+  return (
+    <div
+      className={` ${className} flex text-tertiary-light/87 pb-[8px] laptop:pb-[10px] self-stretch justify-between items-baseline text-sm font-light tablet:text-base laptop:text-lg laptop:font-regular`}
+    >
+      <div className="flex flex-col">
+        <label>{label}</label>
+        <span className="text-tertiary-light/50">{subLabel}</span>
+      </div>
+      <span>{info}</span>
     </div>
   );
 }
