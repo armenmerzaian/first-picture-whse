@@ -113,7 +113,6 @@ export default function ContactForm() {
             placeholder="Send us a message..."
             required
             maxLength={300}
-            minLength={20}
           />
           <label
           htmlFor='message' 
